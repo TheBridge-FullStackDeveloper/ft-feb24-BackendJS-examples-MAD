@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enviando datos</h1>
+    <input id="product_name" type="text">
+    <button id="send">Enviar</button>
+    <p id="message1"></p>
+
+    <h2>POST vía JS</h2>
+    <form id="form_product">
+        <input type="text" id="product_name" name="product_name">
+        <input type="number" id="price" name="price">
+        <input type="submit" value="enviar el formulario">
+    </form>
+    <p id="message2"></p>
+
+<h2>POST vía HTML</h2>
+    <form action="https://fakestoreapi.com/products" method="POST">
+        <input type="text" id="title" name="title">
+        <input type="number" id="price" name="price">
+        <input type="submit" value="enviar el formulario">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
