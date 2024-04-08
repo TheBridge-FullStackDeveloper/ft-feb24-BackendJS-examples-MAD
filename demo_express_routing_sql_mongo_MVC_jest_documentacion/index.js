@@ -65,6 +65,8 @@ app.use('/api-jsdoc', express.static(path.join(__dirname, '/jsondocs')));
 app.use("*",error404); // Middleware que gestiona el error 404
 
 // http://localhost:3000
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Example app listening on  http://localhost:${port}`);
 });
+
+module.exports = server; // Exportamos el servidor para los test
